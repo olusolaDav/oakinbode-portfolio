@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
-import { Github, Mail, Linkedin, Twitter, MessageCircle } from "lucide-react"
+import { Github, Mail, Linkedin, Twitter, MessageCircle, X } from "lucide-react"
 import { GradientOutlineBorder } from "@/components/effects/gradient-outline-border"
 import { SectionWrapper } from "@/components/layout/section-wrapper"
 import type { PersonalInfo, SocialLink } from "@/types"
@@ -133,17 +133,19 @@ export function HeroSection({ personalInfo, socialLinks, typingSkills }: HeroSec
             <div className="flex items-center space-x-4 pt-4">
               <span className="text-sm text-gray-400 font-medium">Connect with me:</span>
               <div className="flex space-x-3">
-                {socialLinks.slice(0, 3).map((social, index) => {
+                {socialLinks.map((social, index) => {
                   const gradients = [
                     ["#ec4899", "#f97316"], // Pink to Orange
                     ["#8b5cf6", "#a855f7"], // Purple variations
-                    ["#06b6d4", "#3b82f6"]  // Cyan to Blue
+                    ["#06b6d4", "#3b82f6"], // Cyan to Blue
+                    ["#a855f7", "#d946ef"], // Purple
+                    ["#22c55e", "#10b981"]  // Green
                   ];
 
                   return (
                     <GradientOutlineBorder
                       key={social.name}
-                      gradientColors={gradients[index]}
+                      gradientColors={gradients[index % gradients.length]}
                       containerClassName="rounded-full"
                     >
                       <a
@@ -155,7 +157,7 @@ export function HeroSection({ personalInfo, socialLinks, typingSkills }: HeroSec
                       >
                         {social.icon === "Github" && <Github className="h-5 w-5 text-pink-400" />}
                         {social.icon === "Linkedin" && <Linkedin className="h-5 w-5 text-blue-400" />}
-                        {social.icon === "Twitter" && <Twitter className="h-5 w-5 text-cyan-400" />}
+                        {social.icon === "Twitter" && <X className="h-5 w-5 text-cyan-400" />}
                         {social.icon === "Mail" && <Mail className="h-5 w-5 text-purple-400" />}
                         {social.icon === "MessageCircle" && <MessageCircle className="h-5 w-5 text-green-400" />}
                       </a>

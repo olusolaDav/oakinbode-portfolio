@@ -1,9 +1,9 @@
 import type { PersonalInfo, SEOData } from "@/types"
 
 export const personalInfo: PersonalInfo = {
-  name: "Olusola David AKINBODE",
+  name: "Olusola Akinbode",
   title: "Full Stack Developer",
-  email: "olusola.dave11@gmail.com",
+  email: "hello@oakinbode.info",
   phone: "+2348032158383",
   location: "Nigeria",
   bio: "I'm a passionate software developer with expertise in full-stack web development, frontend technologies, and graphic design. With over 4 years of experience, I specialize in creating robust, scalable web applications using modern technologies like React, Node.js, Python, and various databases. I'm also skilled in DevOps practices and have a strong background in UI/UX design.",
@@ -11,7 +11,7 @@ export const personalInfo: PersonalInfo = {
 }
 
 export const seoData: SEOData = {
-  title: "Olusola David AKINBODE - Full Stack Developer & Software Engineer",
+  title: "Olusola Akinbode - Full Stack Developer & Software Engineer",
   description:
     "Experienced Full Stack Developer with 4+ years of expertise in React, Node.js, Python, TypeScript, and modern web technologies. Available for freelance projects and full-time opportunities. Specializing in scalable web applications, DevOps, and UI/UX design.",
   keywords: [

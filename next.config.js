@@ -4,11 +4,13 @@ const nextConfig = {
     optimizePackageImports: ["lucide-react"],
   },
   images: {
-    domains: ["placeholder.svg"],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'placeholder.svg',
+      },
+    ],
     unoptimized: true,
-  },
-  eslint: {
-    ignoreDuringBuilds: true,
   },
   typescript: {
     ignoreBuildErrors: true,

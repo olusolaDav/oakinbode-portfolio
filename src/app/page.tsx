@@ -4,7 +4,7 @@ import { useState, useEffect } from "react"
 import dynamic from "next/dynamic"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { ArrowUp, Github, Mail, Linkedin, Twitter, MessageCircle } from "lucide-react"
+import { ArrowUp, Github, Mail, Linkedin, Twitter, MessageCircle, X } from "lucide-react"
 import { Navigation } from "@/components/layout/navigation"
 import { HeroSection } from "@/components/sections/hero-section"
 import { AboutSection } from "@/components/sections/about-section"
@@ -210,20 +210,20 @@ export default function Portfolio() {
                 Full Stack Developer passionate about creating exceptional digital experiences 
                 and solving complex problems with modern technologies.
               </p>
-              <div className="flex space-x-4">
-                {socialLinks.slice(0, 3).map((social, index) => (
+              <div className="flex space-x-3">
+                {socialLinks.map((social) => (
                   <a
                     key={social.name}
                     href={social.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-10 h-10 bg-slate-800/50 hover:bg-slate-700/50 rounded-lg flex items-center justify-center transition-colors"
+                    className="w-10 h-10 bg-slate-800/50 hover:bg-slate-700/50 rounded-lg flex items-center justify-center transition-colors group"
                     aria-label={`Visit my ${social.name}`}
                   >
-                    <span className="text-gray-400 hover:text-cyan-400 transition-colors">
+                    <span className="text-gray-400 group-hover:text-cyan-400 transition-colors">
                       {social.icon === "Github" && <Github className="h-5 w-5" />}
                       {social.icon === "Linkedin" && <Linkedin className="h-5 w-5" />}
-                      {social.icon === "Twitter" && <Twitter className="h-5 w-5" />}
+                      {social.icon === "Twitter" && <X className="h-5 w-5" />}
                       {social.icon === "Mail" && <Mail className="h-5 w-5" />}
                       {social.icon === "MessageCircle" && <MessageCircle className="h-5 w-5" />}
                     </span>
@@ -254,7 +254,7 @@ export default function Portfolio() {
               <div className="space-y-3">
                 <p className="text-gray-400 flex items-center space-x-2">
                   <span>📧</span>
-                  <span>olusola.dave11@gmail.com</span>
+                  <span>hello@oakinbode.info</span>
                 </p>
                 <p className="text-gray-400 flex items-center space-x-2">
                   <span>🌍</span>  

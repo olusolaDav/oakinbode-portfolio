@@ -2,7 +2,7 @@ import type { ContactInfo } from "@/types"
 import { socialLinks } from "./social"
 
 export const contactInfo: ContactInfo = {
-  email: "olusola.dave11@gmail.com",
+  email: "hello@oakinbode.info",
   phone: "+2348032158383",
   location: "Nigeria",
   socialLinks,

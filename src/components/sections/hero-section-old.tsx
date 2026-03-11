@@ -59,6 +59,8 @@ export function HeroSection({ personalInfo, socialLinks, typingSkills }: HeroSec
     }
   }
 
+  const fullname = 'Olusola Akinbode'
+
   return (
     <SectionWrapper
       id="hero"
@@ -77,12 +79,12 @@ export function HeroSection({ personalInfo, socialLinks, typingSkills }: HeroSec
                 </h2>
                 <h1 className="font-bold leading-tight">
                   <span className="block bg-gradient-to-r from-pink-400 via-purple-500 to-cyan-400 bg-clip-text text-transparent">
-                    {personalInfo.name.split(' ')[0]}
+                    {fullname.split(' ')[0]}
                   </span>
                   <span className="block text-white mt-2 lg:mt-4">
-                    {personalInfo.name.split(' ').slice(1).join(' ')}
+                    {fullname.split(' ').slice(1).join(' ')}
                   </span>
-                </h1>
+                </h1>   
               </div>
 
               {/* Dynamic Typing Text */}

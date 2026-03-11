@@ -15,6 +15,7 @@ interface ProjectCardProps {
   role: string
   codeSnippet: string
   showGithub?: boolean
+  category?: string
 }
 
 export function ProjectCard({
@@ -27,9 +28,20 @@ export function ProjectCard({
   role,
   codeSnippet,
   showGithub = true,
+  category,
 }: ProjectCardProps) {
   return (
     <div className="space-y-2">
+      {/* Learning Project Badge */}
+      {category === "Learning Project" && (
+        <div className="flex justify-start mb-2">
+          <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-gradient-to-r from-amber-500/20 to-orange-500/20 text-amber-300 border border-amber-500/30">
+            <span className="w-2 h-2 bg-amber-400 rounded-full mr-1.5 animate-pulse"></span>
+            Learning Project
+          </span>
+        </div>
+      )}
+      
       {/* Project Preview */}
       <GradientOutlineBorder gradientColors={["#8b5cf6", "#ec4899", "#3b82f6"]}>
         <div className="bg-slate-900/80 backdrop-blur-sm rounded-lg overflow-hidden border-0">

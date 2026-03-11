@@ -268,7 +268,7 @@ export default function Portfolio() {
 
                 <GradientOutlineBorder gradientColors={["#8b5cf6", "#a855f7"]} containerClassName="rounded-full">
                   <a
-                    href="mailto:olusola.dave11@gmail.com"
+                    href="mailto:hello@oakinbode.info"
                     className="w-12 h-12 rounded-full bg-slate-900/80 flex items-center justify-center hover:bg-slate-800/80 transition-colors duration-300 cursor-hover"
                     aria-label="Send me an email"
                   >
