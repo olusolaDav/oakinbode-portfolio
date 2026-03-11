@@ -1,0 +1,29 @@
+{
+  "name": "Olusola David AKINBODE - Full Stack Developer",
+  "short_name": "Olusola Portfolio",
+  "description": "Portfolio website of Olusola David AKINBODE, Full Stack Developer specializing in React, Node.js, Python, and modern web technologies.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#06b6d4",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/images/logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/images/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "categories": ["business", "productivity", "utilities"],
+  "lang": "en",
+  "dir": "ltr",
+  "scope": "/",
+  "prefer_related_applications": false
+}
