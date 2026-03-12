@@ -25,13 +25,17 @@
         },
         body: JSON.stringify({
           sender: {
-            name: "Portfolio Contact Form",
+            name: "Olusola Akinbode: Portfolio Contact Form",
             email: "info@alotacademy.com", // Replace with your verified sender email
           },
           to: [
             {
-              email: "alotacademy@gmail.com", // Replace with your actual email
-              name: "Alot Academy: Alot Digital Solutions",
+              email: "olusola.dave11@gmail.com",
+              name: "Olusola Akinbode",
+            },
+            {
+              email: "hello@oakinbode.info",
+              name: "Olusola Akinbode",
             },
           ],
           subject: `New Contact Form Message from ${name}`,
